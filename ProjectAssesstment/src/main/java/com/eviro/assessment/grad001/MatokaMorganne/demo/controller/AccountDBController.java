@@ -7,7 +7,6 @@ package com.eviro.assessment.grad001.MatokaMorganne.demo.controller;
 import com.eviro.assessment.grad001.MatokaMorganne.demo.entity.AccountProfile;
 import com.eviro.assessment.grad001.MatokaMorganne.demo.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,11 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/accounts")
-public class AccountController {
+public class AccountDBController {
     private final AccountService accountService;
 
     @Autowired
-    public AccountController(AccountService accountService) {
+    public AccountDBController(AccountService accountService) {
         this.accountService = accountService;
     }
 
