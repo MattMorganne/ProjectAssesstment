@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Account Profiles</title>
+</head>
+<body>
+<h1>Account Profiles</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Image</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Loop through the accountProfiles data received from the controller -->
+    <tr th:each="accountProfile : ${accountProfiles}">
+        <td th:text="${accountProfile.id}"></td>
+        <td th:text="${accountProfile.name}"></td>
+        <td th:text="${accountProfile.surname}"></td>
+        <td th:text="${#strings.substring(accountProfile.httpImageLink, #strings.length(accountProfile.httpImageLink) - 14)}"></td>
+        <td>
+            <img th:src="@{'/images/' + ${#strings.substring(accountProfile.httpImageLink, #strings.length(accountProfile.httpImageLink) - 14)}}"
+                 alt="problem with display" style="max-width: 200px; max-height: 200px;" />
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
