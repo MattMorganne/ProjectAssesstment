@@ -4,9 +4,8 @@
  */
 package com.eviro.assessment.grad001.MatokaMorganne.demo.controller;
 
-import com.eviro.assessment.grad001.MatokaMorganne.demo.model.AccountProfile;
-import com.eviro.assessment.grad001.MatokaMorganne.demo.model.AccountProfileRepository;
-import java.util.List;
+import com.eviro.assessment.grad001.MatokaMorganne.demo.entity.AccountProfile;
+import com.eviro.assessment.grad001.MatokaMorganne.demo.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

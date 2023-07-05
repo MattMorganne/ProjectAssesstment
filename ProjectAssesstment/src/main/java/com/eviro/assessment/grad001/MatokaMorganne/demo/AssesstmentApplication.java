@@ -1,9 +1,9 @@
 package com.eviro.assessment.grad001.MatokaMorganne.demo;
 
 import com.eviro.assessment.grad001.MatokaMorganne.demo.controller.AccountProfileReader;
-import com.eviro.assessment.grad001.MatokaMorganne.demo.controller.AccountService;
-import com.eviro.assessment.grad001.MatokaMorganne.demo.model.AccountProfile;
-import com.eviro.assessment.grad001.MatokaMorganne.demo.model.AccountProfileRepository;
+import com.eviro.assessment.grad001.MatokaMorganne.demo.service.AccountService;
+import com.eviro.assessment.grad001.MatokaMorganne.demo.entity.AccountProfile;
+import com.eviro.assessment.grad001.MatokaMorganne.demo.repository.AccountProfileRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
