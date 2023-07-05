@@ -21,7 +21,7 @@
         <td th:text="${accountProfile.id}"></td>
         <td th:text="${accountProfile.name}"></td>
         <td th:text="${accountProfile.surname}"></td>
-        <td th:text="${#strings.substring(accountProfile.httpImageLink, #strings.length(accountProfile.httpImageLink) - 14)}"></td>
+         <td th:text="${accountProfile.httpImageLink}"></td>
         <td>
             <img th:src="@{'/images/' + ${#strings.substring(accountProfile.httpImageLink, #strings.length(accountProfile.httpImageLink) - 14)}}"
                  alt="problem with display" style="max-width: 200px; max-height: 200px;" />
